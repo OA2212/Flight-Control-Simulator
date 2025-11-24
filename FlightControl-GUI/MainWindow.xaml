@@ -1,0 +1,52 @@
+﻿<Window x:Class="FlightControl_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlightControl_GUI"
+        mc:Ignorable="d"
+        Loaded="OnLoad"
+        
+        Title="MainWindow" Height="720" Width="1000">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="photos/background.jpg" />
+        </Grid.Background>
+        <TextBlock x:Name="txtbTime" Width="150" Margin="607,653,243,4" Foreground="White" FontWeight="Bold"/>
+        <ListView x:Name="lvPlanes" Margin="736,338,9,4" Background="#3FF5F5F5" Foreground="White" BorderBrush="Black" BorderThickness="2" FontSize="15"></ListView>
+        <Canvas x:Name="cnvAdd1" Margin="10,36,890,618" Width="100" Height="50"/>
+        <Canvas x:Name="cnvAdd2" Margin="162,36,738,618" Width="100" Height="50"/>
+        <TextBlock x:Name="txtbFN2" Margin="156,81,744,573" Foreground="DarkRed" FontWeight="Bold" Width="100" Height="30" TextAlignment="Center"/>
+        <Canvas x:Name="cnvAdd3" Margin="286,36,614,618" Width="100" Height="50"/>
+        <TextBlock x:Name="txtbFN3" Margin="283,81,617,573" Foreground="DarkRed" FontWeight="Bold" Width="100" Height="30" TextAlignment="Center"/>
+        <Canvas x:Name="cnvAdd4" Margin="560,36,340,618" Width="100" Height="50"/>
+        <TextBlock x:Name="txtbFN4" Margin="557,81,343,573" Foreground="White" FontWeight="Bold" Width="100" Height="30" TextAlignment="Center"/>
+        <Canvas x:Name="cnvAdd51" Margin="766,282,199,362" Width="35" Height="60" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="88.008"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <TextBlock x:Name="txtbFN51" Margin="784,282,116,372" Foreground="DarkRed" FontWeight="Bold" Width="100" Height="30" TextAlignment="Center"/>
+        <Canvas x:Name="cnvAdd52" Margin="782,213,183,431" Width="35" Height="60"/>
+        <TextBlock x:Name="txtbFN52" Margin="783,218,117,436" Foreground="DarkRed" FontWeight="Bold" Width="100" Height="30" TextAlignment="Center"/>
+        <Canvas x:Name="cnvAdd53" Margin="782,153,183,491" Width="35" Height="60"/>
+        <TextBlock x:Name="txtbFN53" Margin="783,152,117,502" Foreground="DarkRed" FontWeight="Bold" Width="100" Height="30" TextAlignment="Center"/>
+        <Canvas x:Name="cnvAdd54" Margin="782,88,183,556" Width="35" Height="60"/>
+        <TextBlock x:Name="txtbFN54" Margin="783,91,117,563"  Foreground="DarkRed" FontWeight="Bold" Width="100" Height="30" TextAlignment="Center"/>
+        <Canvas x:Name="cnvAdd6" Margin="641,338,269,226" Width="90" Height="140"/>
+        <TextBlock x:Name="txtbFN6" Margin="628,331,272,323" Foreground="White" FontWeight="Bold" Width="100" Height="50" TextAlignment="Center"/>
+        <Canvas x:Name="cnvAdd7" Margin="549,338,361,226" Width="90" Height="140"/>
+        <TextBlock x:Name="txtbFN7" Margin="539,331,361,323" Foreground="White" FontWeight="Bold" Width="100" Height="50" TextAlignment="Center"/>
+        <Canvas x:Name="cnvAdd8" Margin="418,88,546,366" Width="35" Height="250"/>
+        <TextBlock x:Name="txtbFN8" Margin="432,188,468,466" Foreground="Yellow" FontWeight="Bold" Width="100" Height="30" TextAlignment="Center"/>
+        <Canvas x:Name="cnvAdd9" Margin="864,36,36,618" Width="100" Height="50"/>
+        <TextBlock x:Name="txtbFN9" Margin="861,81,39,573" Foreground="Yellow" FontWeight="Bold" Width="100" Height="30" TextAlignment="Center"/>
+
+
+    </Grid>
+</Window>

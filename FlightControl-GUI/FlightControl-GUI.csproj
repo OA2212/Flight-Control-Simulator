@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>FlightControl_GUI</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="photos\background.jpg" />
+    <None Remove="photos\openning.jpg" />
+    <None Remove="photos\planes\plane1.png" />
+    <None Remove="photos\planes\‏‏‏‏plane13.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.SignalR.Client" Version="2.4.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonModels\CommonModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="photos\background.jpg" />
+    <Resource Include="photos\planes\plane1.png" />
+    <Resource Include="photos\planes\‏‏plane12.png" />
+    <Resource Include="photos\planes\‏‏‏‏plane13.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="photos\openning.jpg" />
+  </ItemGroup>
+
+</Project>
